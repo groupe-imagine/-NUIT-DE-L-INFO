@@ -14,22 +14,40 @@
     <main>
         <section id="parallels">
             <div class="parallel" onclick="showDetail('heart')">
+                <img src="green-planet.png" alt="Icône cœur" class="icon">
                 <h2>Le Cœur 🌊</h2>
                 <p>(Courants marins)</p>
             </div>
             <div class="parallel" onclick="showDetail('lungs')">
+                <img src="lungs.png" alt="Icône poumons" class="icon">
                 <h2>Les Poumons 🌬️</h2>
                 <p>(Échanges gazeux)</p>
             </div>
             <div class="parallel" onclick="showDetail('skin')">
+                <img src="skin.png" alt="Icône peau" class="icon">
                 <h2>La Peau 🧑</h2>
                 <p>(Température et salinité)</p>
             </div>
+            
         </section>
         <section id="details">
             <p id="detail-text">Cliquez sur une section pour en savoir plus.</p>
         </section>
+        <section id="quiz">
+            <h3>Quizz : Testez vos connaissances !</h3>
+            <div id="question-container">
+                <p id="question-text">Quel est le rôle des courants marins ?</p>
+                <button onclick="checkAnswer('correct')">Régulation de la température mondiale</button>
+                <button onclick="checkAnswer('wrong')">Transport de sel uniquement</button>
+                <button onclick="checkAnswer('wrong')">Production d’oxygène</button>
+            </div>
+            <p id="quiz-feedback"></p>
+            <p id="timer">Temps restant: <span id="time">10</span> secondes</p>
+            <div id="score"></div>
+        </section>
+        
     </main>
     <script src="script.js"></script>
+    <audio id="beach" src="beach.wav"></audio>
 </body>
 </html>
