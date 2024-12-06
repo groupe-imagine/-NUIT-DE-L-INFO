@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Océan et Corps Humain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Et si l’océan était un corps humain ?</h1>
+        <p>Découvrez les parallèles fascinants entre l’océan et le corps humain.</p>
+    </header>
+    <main>
+        <section id="parallels">
+            <div class="parallel" onclick="showDetail('heart')">
+                <h2>Le Cœur 🌊</h2>
+                <p>(Courants marins)</p>
+            </div>
+            <div class="parallel" onclick="showDetail('lungs')">
+                <h2>Les Poumons 🌬️</h2>
+                <p>(Échanges gazeux)</p>
+            </div>
+            <div class="parallel" onclick="showDetail('skin')">
+                <h2>La Peau 🧑</h2>
+                <p>(Température et salinité)</p>
+            </div>
+        </section>
+        <section id="details">
+            <p id="detail-text">Cliquez sur une section pour en savoir plus.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
